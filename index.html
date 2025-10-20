@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-1 Affordable Plumbing Services FAQs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      width: 250px;
+      max-width: 90%;
+      height: auto;
+    }
+    h1 {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+    .faq-container {
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .accordion {
+      background-color: white;
+      color: #004aad;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 18px;
+      transition: 0.4s;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .active, .accordion:hover {
+      background-color: #cce0ff;
+    }
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      border-radius: 0 0 5px 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    .button-group a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #ff6600;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="A-1APSVC Logo 2025.png" alt="A-1 Affordable Plumbing Services Logo">
+  <h1>A-1 Affordable Plumbing Services FAQs</h1>
+</header>
+
+<div class="faq-container">
+
+  <button class="accordion">What areas do you serve?</button>
+  <div class="panel">
+    <p>We serve Lucas, Allen, McKinney, Plano, Frisco, Wylie, Collin County, and Carrollton.</p>
+  </div>
+
+  <button class="accordion">What types of plumbing services do you offer?</button>
+  <div class="panel">
+    <p>Leak detection, water heater installs, pressure regulators, fixture installs, drain cleaning, water/sewer line repair, inspections, commercial services.</p>
+  </div>
+
+  <button class="accordion">Do you offer free estimates?</button>
+  <div class="panel">
+    <p>Yes, free estimates for most jobs. Some detailed inspections may have a fee (discussed upfront).</p>
+  </div>
+
+  <button class="accordion">How much do plumbing services cost?</button>
+  <div class="panel">
+    <p>We provide competitive, upfront pricing after assessing your project.</p>
+  </div>
+
+  <button class="accordion">Are you licensed and insured?</button>
+  <div class="panel">
+    <p>Yes! Fully licensed, insured, with over 30 years' Master Plumber experience.</p>
+  </div>
+
+  <button class="accordion">Can you help with emergency plumbing issues?</button>
+  <div class="panel">
+    <p>We prioritize urgent issues during business hours (no 24/7 service).</p>
+  </div>
+
+  <button class="accordion">What brands do you recommend?</button>
+  <div class="panel">
+    <p>Trusted brands like AO Smith, Moen, Delta, Kohler.</p>
+  </div>
+
+  <button class="accordion">What should I know about water heaters and A.O. Smith products?</button>
+  <div class="panel">
+    <p>High-efficiency, commercial-grade components, and extended warranty options. <a href="https://www.aosmithatlowes.com/owner-center/product-support" target="_blank">View AO Smith Support Documents</a>.</p>
+  </div>
+
+  <button class="accordion">How do I schedule an appointment?</button>
+  <div class="panel">
+    <p>Call/text 469-900-5194, email <a href="mailto:johnniesue@a-1apsvc.com">johnniesue@a-1apsvc.com</a>, or <a href="https://johnniesue.github.io/a1-quote-form/" target="_blank">fill out our online form</a>.</p>
+  </div>
+
+  <button class="accordion">Do you offer warranties on your work?</button>
+  <div class="panel">
+    <p>Yes, we offer labor and manufacturer warranties, discussed before work begins.</p>
+  </div>
+
+  <button class="accordion">What should I do if I have an after-hours emergency?</button>
+  <div class="panel">
+    <p>Turn off your main water valve and leave us a message. We'll respond the next business morning.</p>
+  </div>
+
+</div>
+
+<div class="button-group" style="text-align:center;">
+  <a href="tel:469-900-5194">Call Us</a>
+  <a href="mailto:johnniesue@a-1apsvc.com">Email Us</a>
+  <a href="https://johnniesue.github.io/a1-quote-form/" target="_blank">Schedule Service</a>
+</div>
+
+<footer>
+  &copy; 2025 A-1 Affordable Plumbing Services. All Rights Reserved.
+</footer>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

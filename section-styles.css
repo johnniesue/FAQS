@@ -1,0 +1,74 @@
+.category-container h2 {
+  color: var(--primary-color);
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: none;
+  font-size: 24px;
+}
+
+/* Specific styling for section headers */
+#general h2, #specific h2, #customer h2, #maintenance h2, #emergency h2, #terms h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Terms & Conditions styling to match other sections */
+#terms {
+  margin-top: 30px;
+}
+
+#terms h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Colorful accordion styling for all sections */
+#general .accordion {
+  background-color: #e6f0ff !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+#specific .accordion {
+  background-color: #ffebeb !important;
+  border: 1px solid #ff6600 !important;
+}
+
+#customer .accordion {
+  background-color: #e6f0ff !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+#maintenance .accordion {
+  background-color: #e6ffea !important;
+  border: 1px solid #00a651 !important;
+}
+
+#emergency .accordion {
+  background-color: #ffebeb !important;
+  border: 1px solid #ff6600 !important;
+}
+
+#terms .accordion {
+  background-color: #e6f0ff !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+/* Active state for accordions */
+#general .accordion.active, #general .accordion:hover,
+#customer .accordion.active, #customer .accordion:hover,
+#terms .accordion.active, #terms .accordion:hover {
+  background-color: var(--light-blue);
+}
+
+#specific .accordion.active, #specific .accordion:hover,
+#emergency .accordion.active, #emergency .accordion:hover {
+  background-color: #ffdddd;
+}
+
+#maintenance .accordion.active, #maintenance .accordion:hover {
+  background-color: #d4ffdd;
+}

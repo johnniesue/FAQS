@@ -1,0 +1,39 @@
+/* Normalize all accordion headers as suggested by user */
+.accordion {
+  font-size: 1rem !important;
+  line-height: 1.3 !important;
+  padding: .75rem 1rem !important;
+  height: auto !important; /* Remove fixed height */
+  white-space: normal !important; /* Allow text to wrap */
+}
+
+/* Reset any parent font-size scaling that might affect Terms & Conditions */
+#terms {
+  font-size: 1rem !important;
+}
+
+/* Ensure consistent styling between Emergency and Terms sections */
+#emergency .accordion,
+#terms .accordion {
+  background-color: var(--light-blue) !important;
+  border: 1px solid var(--primary-color) !important;
+  font-size: 1rem !important;
+  padding: .65rem .9rem !important;
+  margin-bottom: 10px !important;
+  border-radius: var(--border-radius) !important;
+  display: block !important; /* Override flex display */
+}
+
+/* Ensure consistent panel styling */
+#emergency .panel,
+#terms .panel {
+  padding: 0 18px !important;
+  background-color: var(--white) !important;
+  border-radius: 0 0 var(--border-radius) var(--border-radius) !important;
+  margin-bottom: 10px !important;
+}
+
+/* Ensure consistent plus/minus icon positioning */
+.accordion:after {
+  right: .9rem !important;
+}

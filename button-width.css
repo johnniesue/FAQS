@@ -1,0 +1,46 @@
+.accordion {
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 40px !important; /* Space for the plus/minus sign */
+}
+
+/* Make all buttons have consistent height */
+.accordion {
+  height: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Ensure text is properly aligned and truncated */
+.accordion {
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+}
+
+/* Specific styling for Terms & Conditions section to ensure buttons aren't too wide */
+#terms .accordion {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure all section containers have the same max-width */
+.category-container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Ensure consistent button styling across all sections */
+#general .accordion,
+#specific .accordion,
+#customer .accordion,
+#maintenance .accordion,
+#emergency .accordion,
+#terms .accordion {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
