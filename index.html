@@ -1,152 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>A-1 Affordable Plumbing Services FAQs</title>
+  <meta name="description" content="Frequently asked questions for A-1 Affordable Plumbing Services: services, pricing, licensing, emergencies, and scheduling in Collin County, TX.">
   <style>
-    body {
+    :root{
+      --blue:#004aad;
+      --blue-600:#0b4dab;
+      --tab-bg:#eaf2ff;
+      --tab-border:#d7e6ff;
+    }
+
+    html{scroll-behavior:smooth;}
+    body{
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f7f7f7;
-      color: #333;
+      margin:0; padding:0;
+      background:#f7f7f7; color:#333;
     }
-    header {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 20px;
+
+    /* Header */
+    header{
+      background:var(--blue);
+      color:#fff; text-align:center;
+      padding:16px 12px 20px;
     }
-    header img {
-      width: 250px;
-      max-width: 90%;
-      height: auto;
+    header a{ color:#fff; text-decoration:none; }
+    header img{
+      width:250px; max-width:90%; height:auto; display:block; margin:0 auto 6px;
     }
-    h1 {
-      margin-top: 10px;
-      font-size: 24px;
+    h1{
+      margin:6px 0 0;
+      font-size:28px; font-weight:700;
     }
-    .faq-container {
-      padding: 20px;
-      max-width: 900px;
-      margin: 0 auto;
+
+    /* Search */
+    .search-wrap{
+      display:flex; gap:.5rem; align-items:center;
+      max-width:960px; margin:18px auto; padding:0 12px;
     }
-    .accordion {
-      background-color: white;
-      color: #004aad;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 18px;
-      transition: 0.4s;
-      margin-bottom: 10px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    #faqSearch{
+      flex:1; height:44px; padding:0 14px;
+      border:2px solid #c7d7ff; border-radius:6px;
+      font-size:16px; outline:0;
+      background:#fff;
     }
-    .active, .accordion:hover {
-      background-color: #cce0ff;
+    #faqSearch:focus{ border-color:var(--blue-600); box-shadow:0 0 0 3px rgba(11,77,171,.12); }
+    #clearSearch{
+      height:44px; padding:0 14px; border:0; border-radius:6px;
+      background:var(--blue-600); color:#fff; cursor:pointer; font-weight:600;
     }
-    .panel {
-      padding: 0 18px;
-      display: none;
-      background-color: white;
-      overflow: hidden;
-      border-radius: 0 0 5px 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    /* Tabs */
+    .faq-tabs{
+      max-width:960px; margin:10px auto 18px; padding:12px;
+      border-radius:10px; background:var(--tab-bg); border:1px solid var(--tab-border);
+      display:flex; gap:28px; flex-wrap:wrap; justify-content:center;
     }
-    footer {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 30px;
+    .faq-tabs a{
+      font-weight:700; color:var(--blue-600); text-decoration:none; padding:8px 6px; border-radius:6px;
     }
-    .button-group a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background: #ff6600;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+    .faq-tabs a:hover{ background:#f2f6ff; text-decoration:underline; }
+
+    /* Emergency banner */
+    .emergency-banner{
+      max-width:960px; margin:8px auto 22px; padding:16px 18px;
+      background:rgba(255,0,0,.07); border:2px solid #ff7a1a; border-radius:6px;
+    }
+    .emergency-banner h3{ color:#d84315; margin:0 0 .35rem 0; font-size:20px; }
+    .emergency-banner a{ color:var(--blue-600); font-weight:600; }
+
+    /* Container & section headings */
+    .faq-container{ padding:0 12px 24px; max-width:960px; margin:0 auto; }
+    h2{
+      margin:22px 0 8px; padding-bottom:8px;
+      border-bottom:3px solid var(--blue-600); color:#173e79; font-size:24px;
+    }
+
+    /* Accordions */
+    .accordion{
+      background:#fff; color:var(--blue);
+      cursor:pointer; padding:18px; width:100%;
+      border:none; text-align:left; outline:none;
+      font-size:18px; transition:.2s;
+      margin:10px 0; border-radius:6px;
+      box-shadow:0 2px 5px rgba(0,0,0,.08);
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .accordion .plus{ font-weight:700; color:#1e3a8a; }
+    .accordion:hover, .accordion.active{ background:#cce0ff; }
+    .panel{
+      display:none; padding:0 18px 14px;
+      background:#fff; border-radius:0 0 6px 6px;
+      box-shadow:0 2px 5px rgba(0,0,0,.08); margin-top:-8px;
+    }
+
+    /* Footer & buttons */
+    .button-group{ text-align:center; margin:12px 0 28px; }
+    .button-group a{
+      display:inline-block; margin:10px; padding:10px 20px;
+      background:#ff6600; color:#fff; text-decoration:none; border-radius:5px; font-weight:700;
+    }
+    footer{
+      background:var(--blue); color:#fff; text-align:center;
+      padding:20px; margin-top:30px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="A-1APSVC Logo 2025.png" alt="A-1 Affordable Plumbing Services Logo">
-  <h1>A-1 Affordable Plumbing Services FAQs</h1>
+  <!-- If possible, rename your file to images/logo.png and change src accordingly.
+       For now we URL-encode the spaces to match your file name exactly. -->
+  <a href="./">
+    <img src="A-1APSVC%20Logo%202025.png" alt="A-1 Affordable Plumbing Services Logo">
+    <h1>A-1 Affordable Plumbing Services FAQs</h1>
+  </a>
 </header>
+
+<!-- Search -->
+<div class="search-wrap">
+  <input id="faqSearch" type="search" placeholder="Search FAQs..." aria-label="Search FAQs">
+  <button id="clearSearch" type="button">Clear</button>
+</div>
+
+<!-- Quick-link Tabs -->
+<nav class="faq-tabs">
+  <a href="#general">General Services</a>
+  <a href="#issues">Specific Issues</a>
+  <a href="#concerns">Customer Concerns</a>
+  <a href="#maintenance">Maintenance Tips</a>
+  <a href="#emergency">Emergency Info</a>
+  <a href="#terms">Terms & Conditions</a>
+</nav>
+
+<!-- Emergency Banner -->
+<section id="emergency" class="emergency-banner" aria-labelledby="emergency-title">
+  <h3 id="emergency-title">Plumbing Emergency?</h3>
+  <p>If you're experiencing a plumbing emergency:</p>
+  <ol>
+    <li>Turn off your main water valve</li>
+    <li>Call us at <a href="tel:469-900-5194">469-900-5194</a></li>
+    <li>We prioritize emergency calls during business hours</li>
+  </ol>
+</section>
 
 <div class="faq-container">
 
-  <button class="accordion">What areas do you serve?</button>
+  <!-- GENERAL -->
+  <h2 id="general">General Services</h2>
+
+  <button class="accordion">What areas do you serve? <span class="plus">+</span></button>
   <div class="panel">
-    <p>We serve Lucas, Allen, McKinney, Plano, Frisco, Wylie, Collin County, and Carrollton.</p>
+    <p>We serve Lucas, Allen, McKinney, Plano, Frisco, Wylie, the greater Collin County area, and Carrollton.</p>
   </div>
 
-  <button class="accordion">What types of plumbing services do you offer?</button>
+  <button class="accordion">What types of plumbing services do you offer? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Leak detection, water heater installs, pressure regulators, fixture installs, drain cleaning, water/sewer line repair, inspections, commercial services.</p>
+    <p>Leak detection and repairs, water heater installation and replacement, pressure regulators & shut-off valves, fixture installs (toilets, faucets), drain cleaning, water/sewer line repair, inspections, and light commercial service.</p>
   </div>
 
-  <button class="accordion">Do you offer free estimates?</button>
+  <button class="accordion">Do you offer free estimates? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Yes, free estimates for most jobs. Some detailed inspections may have a fee (discussed upfront).</p>
+    <p>Yes—free estimates for most jobs. Some detailed inspections may have a service fee, which we discuss up front.</p>
   </div>
 
-  <button class="accordion">How much do plumbing services cost?</button>
+  <button class="accordion">How much do plumbing services cost? <span class="plus">+</span></button>
   <div class="panel">
-    <p>We provide competitive, upfront pricing after assessing your project.</p>
+    <p>We provide competitive, upfront pricing based on the scope of work after assessment.</p>
   </div>
 
-  <button class="accordion">Are you licensed and insured?</button>
+  <button class="accordion">Are you licensed and insured? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Yes! Fully licensed, insured, with over 30 years' Master Plumber experience.</p>
+    <p>Yes. We’re fully licensed and insured, with 30+ years of Master Plumber experience.</p>
   </div>
 
-  <button class="accordion">Can you help with emergency plumbing issues?</button>
+  <button class="accordion">Can you help with emergency plumbing issues? <span class="plus">+</span></button>
   <div class="panel">
-    <p>We prioritize urgent issues during business hours (no 24/7 service).</p>
+    <p>We prioritize urgent issues during business hours (we do not offer 24/7 service).</p>
   </div>
 
-  <button class="accordion">What brands do you recommend?</button>
+  <button class="accordion">What brands do you recommend? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Trusted brands like AO Smith, Moen, Delta, Kohler.</p>
+    <p>Trusted brands like A. O. Smith, Moen, Delta, and Kohler.</p>
   </div>
 
-  <button class="accordion">What should I know about water heaters and A.O. Smith products?</button>
+  <button class="accordion">What should I know about water heaters and A. O. Smith products? <span class="plus">+</span></button>
   <div class="panel">
-    <p>High-efficiency, commercial-grade components, and extended warranty options. <a href="https://www.aosmithatlowes.com/owner-center/product-support" target="_blank">View AO Smith Support Documents</a>.</p>
+    <p>High-efficiency options, commercial-grade components, and extended warranty choices. <a href="https://www.aosmithatlowes.com/owner-center/product-support" target="_blank" rel="noopener">View A. O. Smith support documents</a>.</p>
   </div>
 
-  <button class="accordion">How do I schedule an appointment?</button>
+  <button class="accordion">How do I schedule an appointment? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Call/text 469-900-5194, email <a href="mailto:johnniesue@a-1apsvc.com">johnniesue@a-1apsvc.com</a>, or <a href="https://johnniesue.github.io/a1-quote-form/" target="_blank">fill out our online form</a>.</p>
+    <p>Call or text <a href="tel:469-900-5194">469-900-5194</a>, email <a href="mailto:johnniesue@a-1apsvc.com">johnniesue@a-1apsvc.com</a>, or <a href="https://johnniesue.github.io/a1-quote-form/" target="_blank" rel="noopener">submit the online request form</a>.</p>
   </div>
 
-  <button class="accordion">Do you offer warranties on your work?</button>
+  <button class="accordion">Do you offer warranties on your work? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Yes, we offer labor and manufacturer warranties, discussed before work begins.</p>
+    <p>Yes—labor and manufacturer warranties; details provided before work begins.</p>
   </div>
 
-  <button class="accordion">What should I do if I have an after-hours emergency?</button>
+  <button class="accordion">What should I do if I have an after-hours emergency? <span class="plus">+</span></button>
   <div class="panel">
-    <p>Turn off your main water valve and leave us a message. We'll respond the next business morning.</p>
+    <p>Turn off your main water valve and leave us a message. We’ll respond the next business morning.</p>
   </div>
+
+  <!-- PLACEHOLDER SECTION ANCHORS (for your quick links) -->
+  <h2 id="issues">Specific Issues</h2>
+  <p>Use this section for issue-specific FAQs (leaks, noises, low pressure, etc.).</p>
+
+  <h2 id="concerns">Customer Concerns</h2>
+  <p>Use this section for scheduling, access, pets, arrival windows, etc.</p>
+
+  <h2 id="maintenance">Maintenance Tips</h2>
+  <p>Use this section for homeowner maintenance tips and seasonal reminders.</p>
+
+  <h2 id="terms">Terms & Conditions</h2>
+  <p>Add your estimates, contracts, guarantees, deposits, and payment terms here.</p>
 
 </div>
 
-<div class="button-group" style="text-align:center;">
+<div class="button-group">
   <a href="tel:469-900-5194">Call Us</a>
   <a href="mailto:johnniesue@a-1apsvc.com">Email Us</a>
-  <a href="https://johnniesue.github.io/a1-quote-form/" target="_blank">Schedule Service</a>
+  <a href="https://johnniesue.github.io/a1-quote-form/" target="_blank" rel="noopener">Schedule Service</a>
 </div>
 
 <footer>
@@ -154,20 +232,35 @@
 </footer>
 
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
+  // Accordion toggle
+  document.querySelectorAll('.accordion').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      btn.classList.toggle('active');
+      const panel = btn.nextElementSibling;
+      panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+    });
   });
-}
+
+  // Search filter (hides non-matching accordions & panels)
+  const input = document.getElementById('faqSearch');
+  const clearBtn = document.getElementById('clearSearch');
+  const rows = Array.from(document.querySelectorAll('.accordion')).map(acc=>({acc, panel:acc.nextElementSibling}));
+
+  function norm(s){ return (s||'').toLowerCase().trim(); }
+  function filter(){
+    const q = norm(input.value);
+    rows.forEach(({acc,panel})=>{
+      const text = norm(acc.textContent + ' ' + panel.textContent);
+      const match = text.includes(q);
+      acc.style.display = match ? '' : 'none';
+      if(!match) panel.style.display = 'none'; // collapse hidden items
+    });
+  }
+  input.addEventListener('input', filter);
+  clearBtn.addEventListener('click', ()=>{ input.value=''; filter(); input.focus(); });
+
+  // Initial filter (noop)
+  filter();
 </script>
 
 </body>
