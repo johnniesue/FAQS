@@ -106,6 +106,10 @@
       background:var(--blue); color:#fff; text-align:center;
       padding:20px; margin-top:30px;
     }
+
+    /* Nice list spacing in panels */
+    .panel p, .panel li { line-height:1.55; }
+    .panel ul { margin:8px 0 12px 18px; }
   </style>
 </head>
 <body>
@@ -216,65 +220,66 @@
   <h2 id="maintenance">Maintenance Tips</h2>
   <p>Use this section for homeowner maintenance tips and seasonal reminders.</p>
 
-<!-- TERMS & CONDITIONS ACCORDIONS -->
-<button class="accordion">Estimates <span class="plus">+</span></button>
-<div class="panel">
-  <p><strong>Validity:</strong> Estimates are valid for 30 days from the date issued.</p>
-  <p><strong>Scope & Pricing:</strong> Pricing is based on the described scope, current material costs, and applicable code requirements. If conditions change or additional work is requested, an updated estimate will be provided for approval.</p>
-  <p><strong>Approval:</strong> An approved estimate (signature, email, or text confirmation) authorizes A-1 Affordable Plumbing Services to begin work.</p>
-</div>
+  <!-- TERMS & CONDITIONS -->
+  <h2 id="terms">Terms & Conditions</h2>
 
-<button class="accordion">Contracts <span class="plus">+</span></button>
-<div class="panel">
-  <p><strong>Agreement:</strong> When an estimate is approved, it becomes a binding agreement for the described work.</p>
-  <p><strong>Change Orders:</strong> Any work not listed on the estimate requires a written change order with updated pricing and timeline.</p>
-</div>
+  <button class="accordion">Estimates <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Validity:</strong> Estimates are valid for 30 days from the date issued.</p>
+    <p><strong>Scope & Pricing:</strong> Pricing is based on the described scope, current material costs, and applicable code requirements. If conditions change or additional work is requested, an updated estimate will be provided for approval.</p>
+    <p><strong>Approval:</strong> An approved estimate (signature, email, or text confirmation) authorizes A-1 Affordable Plumbing Services to begin work.</p>
+  </div>
 
-<button class="accordion">Guarantees & Warranty <span class="plus">+</span></button>
-<div class="panel">
-  <p><strong>Workmanship:</strong> We stand behind our workmanship. Labor warranty details will be listed on your estimate/invoice (coverage varies by service type).</p>
-  <p><strong>Manufacturer Warranty:</strong> Parts and equipment are covered by their manufacturer’s warranty; claims are subject to the manufacturer’s terms.</p>
-  <p><strong>Exclusions:</strong> Warranties do not cover pre-existing issues, abuse, neglect, or conditions outside our control (e.g., water quality, improper use).</p>
-</div>
+  <button class="accordion">Contracts <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Agreement:</strong> When an estimate is approved, it becomes a binding agreement for the described work.</p>
+    <p><strong>Change Orders:</strong> Any work not listed on the estimate requires a written change order with updated pricing and timeline.</p>
+  </div>
 
-<button class="accordion">Deposits <span class="plus">+</span></button>
-<div class="panel">
-  <p>Special-order items or large projects may require a deposit before scheduling. Deposits for special-order/installed parts are typically <strong>non-refundable</strong> once ordered.</p>
-</div>
+  <button class="accordion">Guarantees & Warranty <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Workmanship:</strong> We stand behind our workmanship. Labor warranty details will be listed on your estimate/invoice (coverage varies by service type).</p>
+    <p><strong>Manufacturer Warranty:</strong> Parts and equipment are covered by their manufacturer’s warranty; claims are subject to the manufacturer’s terms.</p>
+    <p><strong>Exclusions:</strong> Warranties do not cover pre-existing issues, abuse, neglect, or conditions outside our control (e.g., water quality, improper use).</p>
+  </div>
 
-<button class="accordion">Payments <span class="plus">+</span></button>
-<div class="panel">
-  <p><strong>Due:</strong> Payment is due upon completion unless otherwise stated in writing.</p>
-  <p><strong>Methods:</strong> We accept standard payment methods (card, check, cash). Any processing fees will be disclosed in advance if applicable.</p>
-  <p><strong>Invoices:</strong> Property managers or commercial accounts may be billed on agreed terms (e.g., Net 15/Net 30). Past-due balances may incur late fees.</p>
-</div>
+  <button class="accordion">Deposits <span class="plus">+</span></button>
+  <div class="panel">
+    <p>Special-order items or large projects may require a deposit before scheduling. Deposits for special-order/installed parts are typically <strong>non-refundable</strong> once ordered.</p>
+  </div>
 
-<button class="accordion">Non-Refundable Materials & Special Orders <span class="plus">+</span></button>
-<div class="panel">
-  <p>Once special-order parts are purchased for your job, those materials are non-returnable and non-refundable. If a project is canceled after ordering, you are responsible for those costs.</p>
-</div>
+  <button class="accordion">Payments <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Due:</strong> Payment is due upon completion unless otherwise stated in writing.</p>
+    <p><strong>Methods:</strong> We accept standard payment methods (card, check, cash). Any processing fees will be disclosed in advance if applicable.</p>
+    <p><strong>Invoices:</strong> Property managers or commercial accounts may be billed on agreed terms (e.g., Net 15/Net 30). Past-due balances may incur late fees.</p>
+  </div>
 
-<button class="accordion">Permits & Code Compliance <span class="plus">+</span></button>
-<div class="panel">
-  <p>When required, permits and inspections will be obtained per local codes. If unforeseen code upgrades are required, we’ll provide a change order for your approval before proceeding.</p>
-</div>
+  <button class="accordion">Non-Refundable Materials & Special Orders <span class="plus">+</span></button>
+  <div class="panel">
+    <p>Once special-order parts are purchased for your job, those materials are non-returnable and non-refundable. If a project is canceled after ordering, you are responsible for those costs.</p>
+  </div>
 
-<button class="accordion">Access & Safety <span class="plus">+</span></button>
-<div class="panel">
-  <p>Please ensure clear access to work areas and secure pets. We take safety seriously and reserve the right to stop work if conditions are unsafe.</p>
-</div>
+  <button class="accordion">Permits & Code Compliance <span class="plus">+</span></button>
+  <div class="panel">
+    <p>When required, permits and inspections will be obtained per local codes. If unforeseen code upgrades are required, we’ll provide a change order for your approval before proceeding.</p>
+  </div>
 
-<button class="accordion">Cancellations & Rescheduling <span class="plus">+</span></button>
-<div class="panel">
-  <p>We understand plans change. Please notify us as early as possible to reschedule. For special-order items or short-notice cancellations, material/restocking or trip charges may apply.</p>
-</div>
+  <button class="accordion">Access & Safety <span class="plus">+</span></button>
+  <div class="panel">
+    <p>Please ensure clear access to work areas and secure pets. We take safety seriously and reserve the right to stop work if conditions are unsafe.</p>
+  </div>
 
-<button class="accordion">Signature / Approval <span class="plus">+</span></button>
-<div class="panel">
-  <p>Customer approval (signature, email, or text) on estimates or invoices confirms acceptance of scope, pricing, and these Terms & Conditions.</p>
-  <p style="opacity:.8;margin-top:6px;">Last updated: <span id="tosUpdated">June 2025</span></p>
-</div>
+  <button class="accordion">Cancellations & Rescheduling <span class="plus">+</span></button>
+  <div class="panel">
+    <p>We understand plans change. Please notify us as early as possible to reschedule. For special-order items or short-notice cancellations, material/restocking or trip charges may apply.</p>
+  </div>
 
+  <button class="accordion">Signature / Approval <span class="plus">+</span></button>
+  <div class="panel">
+    <p>Customer approval (signature, email, or text) on estimates or invoices confirms acceptance of scope, pricing, and these Terms & Conditions.</p>
+    <p style="opacity:.8;margin-top:6px;">Last updated: <span id="tosUpdated">June 2025</span></p>
+  </div>
 
 </div>
 
