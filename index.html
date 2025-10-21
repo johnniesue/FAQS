@@ -96,6 +96,9 @@
       box-shadow:0 2px 5px rgba(0,0,0,.08); margin-top:-8px;
     }
 
+    .panel p, .panel li { line-height:1.55; }
+    .panel ul { margin:8px 0 12px 18px; }
+
     /* CTA Footer Buttons */
     .cta-footer {
       background:#f9f9f9;
@@ -136,9 +139,6 @@
       background:var(--blue); color:#fff; text-align:center;
       padding:20px; margin-top:0;
     }
-
-    .panel p, .panel li { line-height:1.55; }
-    .panel ul { margin:8px 0 12px 18px; }
   </style>
 </head>
 <body>
@@ -178,8 +178,119 @@
 </section>
 
 <div class="faq-container">
-  <!-- (your accordion sections unchanged) -->
-  <!-- ... existing FAQ content ... -->
+
+  <!-- GENERAL SERVICES -->
+  <h2 id="general">General Services</h2>
+
+  <button class="accordion">Are you licensed and insured? <span class="plus">+</span></button>
+  <div class="panel"><p>Yes. A-1 Affordable Plumbing Services operates under Texas state plumbing licensure and maintains active general liability insurance. License details are listed on our invoices and can be provided upon request.</p></div>
+
+  <button class="accordion">What are your standard rates? <span class="plus">+</span></button>
+  <div class="panel">
+    <p>Most service calls start at a <strong>2-hour minimum</strong> package at a fair local rate, plus materials. Larger or quoted projects may be flat-priced. We’ll always communicate pricing before work begins.</p>
+  </div>
+
+  <button class="accordion">Do you replace water heaters and what’s included? <span class="plus">+</span></button>
+  <div class="panel">
+    <p>Yes. We install 50-gal AO Smith (gas or electric), pull permit when required, bring installations to code, and include flood stops on upstairs/attic installs. Typical pricing range is shown on your estimate and depends on location, venting, and code updates.</p>
+  </div>
+
+  <button class="accordion">Which areas do you serve? <span class="plus">+</span></button>
+  <div class="panel"><p>We service Lucas, Allen, Plano, Fairview, McKinney, Frisco, and surrounding North Dallas suburbs. If you’re just outside this area, call us and we’ll try to help.</p></div>
+
+  <button class="accordion">How do I get an estimate? <span class="plus">+</span></button>
+  <div class="panel"><p>Call, email, or use the “Schedule Service” button below. For larger projects, we may do an on-site visit to confirm scope before providing a written estimate.</p></div>
+
+  <button class="accordion">What should I do if I have an after-hours emergency? <span class="plus">+</span></button>
+  <div class="panel"><p>Turn off your main water valve and leave us a message. We’ll respond the next business morning.</p></div>
+
+  <!-- SPECIFIC ISSUES -->
+  <h2 id="issues">Specific Issues</h2>
+
+  <button class="accordion">Why do I hear a high-pitched whistling after the toilet fills? <span class="plus">+</span></button>
+  <div class="panel"><p>That’s usually a failing toilet fill valve or a partially closed stop valve. Replace the fill valve and ensure the stop is fully open.</p></div>
+
+  <button class="accordion">What causes banging pipes (water hammer)? <span class="plus">+</span></button>
+  <div class="panel"><p>Pressure spikes cause rattling pipes. Solutions include water hammer arrestors, securing loose lines, and keeping household pressure ~55–75 PSI.</p></div>
+
+  <button class="accordion">Why is my whole house pressure low? <span class="plus">+</span></button>
+  <div class="panel"><p>Common culprits: aging PRV (often every 8–12 years), partially closed main, clogged filters/softener. We can test pressure and replace the PRV if needed.</p></div>
+
+  <button class="accordion">My water heater is leaking—what do I do? <span class="plus">+</span></button>
+  <div class="panel"><p>Turn off the cold inlet and power/gas, then call <a href="tel:469-900-5194">469-900-5194</a>. T&P valve discharge points to over-temperature/pressure; tank leaks typically mean replacement.</p></div>
+
+  <button class="accordion">Why is my drain slow or gurgling? <span class="plus">+</span></button>
+  <div class="panel"><p>That’s usually a partial clog or vent issue. We can cable/jet the line; avoid harsh chemical cleaners that can damage piping and fixtures.</p></div>
+
+  <!-- CUSTOMER CONCERNS -->
+  <h2 id="concerns">Customer Concerns</h2>
+
+  <button class="accordion">How do you schedule jobs? <span class="plus">+</span></button>
+  <div class="panel"><p>We provide arrival windows and text/call when en route. Emergencies are prioritized during business hours.</p></div>
+
+  <button class="accordion">Do I need to be home? <span class="plus">+</span></button>
+  <div class="panel"><p>We can work with access (lockbox/neighbor) if you’ve given permission, but please ensure a decision-maker is reachable by phone during the appointment.</p></div>
+
+  <button class="accordion">What about pets and access? <span class="plus">+</span></button>
+  <div class="panel"><p>Please secure pets and clear a path to work areas (under sinks, water heater closets, etc.).</p></div>
+
+  <!-- MAINTENANCE -->
+  <h2 id="maintenance">Maintenance Tips</h2>
+
+  <button class="accordion">Annual water heater flush <span class="plus">+</span></button>
+  <div class="panel"><p>Flush sediment annually and test the T&P valve. Typical lifespan is 8–12 years depending on water quality and maintenance.</p></div>
+
+  <button class="accordion">Freeze protection for North Texas <span class="plus">+</span></button>
+  <div class="panel"><p>Insulate hose bibbs, disconnect hoses, and drip faucets on exterior walls during hard freezes. Know where your main shutoff is located.</p></div>
+
+  <!-- TERMS -->
+  <h2 id="terms">Terms & Conditions</h2>
+
+  <button class="accordion">Estimates <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Validity:</strong> Estimates are valid for 30 days from the date issued.</p>
+    <p><strong>Scope & Pricing:</strong> Pricing is based on the described scope, current material costs, and applicable code requirements. If conditions change or additional work is requested, an updated estimate will be provided for approval.</p>
+    <p><strong>Approval:</strong> An approved estimate (signature, email, or text confirmation) authorizes A-1 Affordable Plumbing Services to begin work.</p>
+  </div>
+
+  <button class="accordion">Contracts <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Agreement:</strong> When an estimate is approved, it becomes a binding agreement for the described work.</p>
+    <p><strong>Change Orders:</strong> Any work not listed on the estimate requires a written change order with updated pricing and timeline.</p>
+  </div>
+
+  <button class="accordion">Guarantees & Warranty <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Workmanship:</strong> We stand behind our workmanship. Labor warranty details will be listed on your estimate/invoice (coverage varies by service type).</p>
+    <p><strong>Manufacturer Warranty:</strong> Parts and equipment are covered by their manufacturer’s warranty; claims are subject to the manufacturer’s terms.</p>
+    <p><strong>Exclusions:</strong> Warranties do not cover pre-existing issues, abuse, neglect, or conditions outside our control (e.g., water quality, improper use).</p>
+  </div>
+
+  <button class="accordion">Deposits <span class="plus">+</span></button>
+  <div class="panel"><p>Special-order items or large projects may require a deposit before scheduling. Deposits for special-order/installed parts are typically <strong>non-refundable</strong> once ordered.</p></div>
+
+  <button class="accordion">Payments <span class="plus">+</span></button>
+  <div class="panel">
+    <p><strong>Due:</strong> Payment is due upon completion unless otherwise stated in writing.</p>
+    <p><strong>Methods:</strong> We accept standard payment methods (card, check, cash). Any processing fees will be disclosed in advance if applicable.</p>
+    <p><strong>Invoices:</strong> Property managers or commercial accounts may be billed on agreed terms (e.g., Net 15/Net 30). Past-due balances may incur late fees.</p>
+  </div>
+
+  <button class="accordion">Non-Refundable Materials & Special Orders <span class="plus">+</span></button>
+  <div class="panel"><p>Once special-order parts are purchased for your job, those materials are non-returnable and non-refundable. If a project is canceled after ordering, you are responsible for those costs.</p></div>
+
+  <button class="accordion">Permits & Code Compliance <span class="plus">+</span></button>
+  <div class="panel"><p>When required, permits and inspections will be obtained per local codes. If unforeseen code upgrades are required, we’ll provide a change order for your approval before proceeding.</p></div>
+
+  <button class="accordion">Access & Safety <span class="plus">+</span></button>
+  <div class="panel"><p>Please ensure clear access to work areas and secure pets. We take safety seriously and reserve the right to stop work if conditions are unsafe.</p></div>
+
+  <button class="accordion">Cancellations & Rescheduling <span class="plus">+</span></button>
+  <div class="panel"><p>We understand plans change. Please notify us as early as possible to reschedule. For special-order items or short-notice cancellations, material/restocking or trip charges may apply.</p></div>
+
+  <button class="accordion">Signature / Approval <span class="plus">+</span></button>
+  <div class="panel"><p>Customer approval (signature, email, or text) on estimates or invoices confirms acceptance of scope, pricing, and these Terms & Conditions.</p><p style="opacity:.8;margin-top:6px;">Last updated: <span id="tosUpdated">October 2025</span></p></div>
+
 </div>
 
 <!-- Contact Buttons -->
